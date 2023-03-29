@@ -1,0 +1,10 @@
+.box{
+    padding: 1em;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

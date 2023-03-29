@@ -1,4 +1,5 @@
 import styles from './Project.module.css'
+import LinkButton from '../components/LinkButton'
 import Message from "../components/Message"
 import { useLocation } from "react-router-dom"
 
@@ -11,12 +12,17 @@ function Projects() {
     }
 
     return(
-        <div>
+        <div className={styles.box}>
             <div>
-                <h1>Meus Projetos</h1>
-                <a href="#">Novo Projeto</a>
+                <div className={styles.header}>
+                    <h1>Meus Projetos</h1>
+                    <LinkButton to="/newproject" text="Novo Projeto"/>
+                </div>
+                {message && <Message text={message} type="sucess"/>}
             </div>
-            {message && <Message text={message} type="sucess"/>}
+            <div className={styles.card_item}>
+
+            </div>
         </div>
     )
 }

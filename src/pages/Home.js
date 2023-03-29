@@ -1,7 +1,6 @@
 import styles from "./Home.module.css"
 import savings from "../img/savings.svg"
 import LinkButton from "../components/LinkButton"
-import Container from "../components/Container"
 
 function Home() {
     return(
